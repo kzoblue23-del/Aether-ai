@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1b"><meta name="description" content="Aether AI - asisten belajar dan lab keamanan Android">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+  <title>Aether AI</title>
+</head>
+<body>
+  <div class="app">
+    <header><div class="logo">A</div><div><h1>AETHER AI</h1><small>AI ASSISTANT · SECURITY LAB</small></div><span class="status">● READY</span></header>
+    <nav><button class="tab active" data-tab="chat">AI CHAT</button><button class="tab" data-tab="lab">SECURITY LAB</button></nav>
+    <main>
+      <section id="chat" class="panel active">
+        <div class="intro"><div class="orb">A</div><h2>Halo, selamat datang.</h2><p>Apa yang ingin kamu pelajari hari ini?</p></div>
+        <div id="messages" class="messages"><div class="bubble bot">Aku Aether AI. Tulis pertanyaan atau pilih foto untuk memulai.</div></div>
+        <div class="composer"><label class="upload">＋<input id="photo" type="file" accept="image/*" hidden></label><textarea id="prompt" rows="1" placeholder="Tanyakan sesuatu..."></textarea><button id="send">KIRIM</button></div>
+        <p class="hint" id="photoName">AI memerlukan koneksi internet dan API backend.</p>
+      </section>
+      <section id="lab" class="panel">
+        <h2>Security Lab</h2><p class="muted">Laboratorium simulasi untuk mempelajari keamanan aplikasi milik sendiri.</p>
+        <div class="labcard"><b>Simulasi App Lock</b><p>Contoh status: aplikasi berada dalam mode terkunci.</p><span class="pill">DEMO ONLY</span><button id="lockDemo">Jalankan simulasi</button><p id="lockResult" class="result">Belum dijalankan.</p></div>
+        <div class="labcard"><b>Checklist pengujian</b><ul><li>Periksa izin aplikasi</li><li>Uji perilaku navigasi pada aplikasi demo</li><li>Catat temuan dan rekomendasi</li></ul></div>
+        <p class="hint">Tidak menguji atau melewati proteksi aplikasi pihak lain.</p>
+      </section>
+    </main>
+    <footer>AETHER AI · PROTOTIPE BELAJAR</footer>
+  </div>
+  <script src="app.js"></script>
+</body></html>

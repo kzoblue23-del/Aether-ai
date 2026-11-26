@@ -1,0 +1,9 @@
+{
+  "name": "Aether AI",
+  "short_name": "Aether AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080d1b",
+  "theme_color": "#080d1b",
+  "icons": []
+}
